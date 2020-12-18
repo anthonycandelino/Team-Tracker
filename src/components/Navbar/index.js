@@ -1,6 +1,5 @@
 import React from 'react'
 import {Nav, NavLink, NavMenu} from './NavbarElements'
-import "react-toggle/style.css" 
 import 'antd/dist/antd.css';
 import {Button} from 'antd';
 

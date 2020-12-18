@@ -1,0 +1,137 @@
+.page-title {
+    color: #2191bb;
+    text-align: center;
+    padding: 50px 0px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+nav a h1 {
+    color: #2191bb;
+    font-weight: bold;
+}
+
+nav div a {
+    color: #000000 !important;
+    font-size: 15px;
+} 
+
+#lastMatchImage {
+    max-width: 800px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+#potwImg{
+    max-width: 200px;
+    padding-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    /* padding: 30px; */
+}
+#standings {
+    padding-top: 25px;
+}
+
+#standings th {
+    padding-top: 15px;
+    padding-right: 25px;
+    color: rgb(65, 65, 65);
+}
+
+#standings td {
+    padding-top: 15px;
+    padding-right: 25px;
+   
+}
+
+.editable-row .ant-form-item-explain {
+    position: absolute;
+    top: 100%;
+    font-size: 12px;
+}
+
+.playerListTable {
+    /* padding-top: 50px; */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.match-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.match {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 25px 75px;
+    text-align: center;
+    box-shadow: 0 0 0 1pt #999;
+}
+
+.city-lions-text {
+    color: #2191bb;
+    display: inline;
+    clear:none;
+}
+
+#newMatchButton {
+    width: 200px;
+    margin-bottom: 45px;    
+}
+
+.stat-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.stat {
+    flex: 0 0 33.3333%;
+}
+
+@media all and (max-width: 1500px) {
+    .stat {
+        flex: 0 0 50%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .stat-container {
+        flex-direction: column;
+    }
+}
+
+.stat-person {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 25px 75px;
+    text-align: center;
+    box-shadow: 0 0 0 1pt #999;
+}
+
+

@@ -3,7 +3,7 @@ import { Tag, InputNumber } from 'antd';
 
 const Stats = () => {
     return (
-        <div style={{justifyContent: 'center', alignItems: 'center', height: '90vh'}}>
+        <div style={{ justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
             <h1 className="page-title">Player Stats</h1>
             <div className="stat-container">
                 <div className="stat">

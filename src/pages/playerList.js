@@ -59,7 +59,7 @@ const PlayerList = () => {
     const [form] = Form.useForm();
     const [data, setData] = useState(originData);
     const [editingKey, setEditingKey] = useState('');
-    const [isModalVisible, setIsModalVisible] = useState(false) 
+    const [isModalVisible, setIsModalVisible] = useState(false)
     const handleOk = () => {
         setIsModalVisible(false);
         message.success('New Player Added To Team!');
@@ -81,10 +81,10 @@ const PlayerList = () => {
 
     const deleteRow = (record) => {
 
-            let temp = data.filter(x => x.key !== record.key)
-            let i = 0;
-            temp.forEach(x => x.key = i++)
-            setData(temp);   
+        let temp = data.filter(x => x.key !== record.key)
+        let i = 0;
+        temp.forEach(x => x.key = i++)
+        setData(temp);
     };
 
     const cancel = () => {
@@ -143,7 +143,7 @@ const PlayerList = () => {
                             Save
                         </a>
                         <Popconfirm title="Sure you want to cancel?" okText="Yes"
-                                cancelText="No" onConfirm={cancel}>
+                            cancelText="No" onConfirm={cancel}>
                             <a>Cancel</a>
                         </Popconfirm>
                     </span>
@@ -155,14 +155,14 @@ const PlayerList = () => {
                                 </a>
                             </div>
                             <div style={{ 'display': 'inline-block' }}>
-                            <Popconfirm
-                                title="Are you sure to delete this player?"
-                                onConfirm={() => deleteRow(record)}
-                                okText="Yes"
-                                cancelText="No"
-                            >
-                                <a><Delete style={{ 'color': '#ff4141' }} /></a>
-                            </Popconfirm>
+                                <Popconfirm
+                                    title="Are you sure to delete this player?"
+                                    onConfirm={() => deleteRow(record)}
+                                    okText="Yes"
+                                    cancelText="No"
+                                >
+                                    <a><Delete style={{ 'color': '#ff4141' }} /></a>
+                                </Popconfirm>
                             </div>
                         </div>
                     );
@@ -170,7 +170,7 @@ const PlayerList = () => {
         },
     ];
 
-    
+
 
     const mergedColumns = columns.map((col) => {
         if (!col.editable) {
@@ -187,15 +187,15 @@ const PlayerList = () => {
             }),
         };
     });
-    
+
     return (
         <div style={{ justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
             <h1 className="page-title">City Lions Player Information</h1>
             <Form form={form} component={false}>
                 <div className="playerListTable">
-                    <Form style={{float:'right'}}>
-                        <Button type="primary submit" onClick={() => setIsModalVisible(true)} style={{'marginRight':'5px', marginBottom: 20}}>
-                                Add New Player +
+                    <Form style={{ float: 'right' }}>
+                        <Button type="primary submit" onClick={() => setIsModalVisible(true)} style={{ 'marginRight': '5px', marginBottom: 20 }}>
+                            Add New Player +
                         </Button>
                     </Form>
                     <Table
@@ -214,7 +214,7 @@ const PlayerList = () => {
                         }}
                     />
                 </div>
-                
+
             </Form>
             <Modal title="Add New Player to Team" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel} footer={null}>
                 <>
@@ -222,7 +222,7 @@ const PlayerList = () => {
                         labelCol={{ span: 4 }}
                         wrapperCol={{ span: 14 }}
                         layout="horizontal"
-                        onFinish={ (e) => {
+                        onFinish={(e) => {
                             console.log(e)
                             e.key = data.length + 1;
                             setData([...data, e])
@@ -235,10 +235,10 @@ const PlayerList = () => {
                         <Form.Item label="Email" name="email" rules={[{ required: true }]}>
                             <Input placeholder="Email" />
                         </Form.Item>
-                    
+
                         <Form.Item>
                             <Button htmlType="submit">Save</Button>
-                        </Form.Item> 
+                        </Form.Item>
                     </Form>
                 </>
             </Modal>

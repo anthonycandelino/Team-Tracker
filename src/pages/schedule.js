@@ -80,7 +80,7 @@ const Schedule = () => {
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <Button onClick={()=> no(g)}>No</Button> 
                                 </>
-                            : g.keyWord == "coming" ? <h3 style={{color: 'green'}}>You are {g.keyWord} to this game</h3> :
+                            : g.keyWord === "coming" ? <h3 style={{color: 'green'}}>You are {g.keyWord} to this game</h3> :
                             <h3 style={{color: 'red'}}>You are {g.keyWord} to this game</h3>}
                         </div>
                     </div> 

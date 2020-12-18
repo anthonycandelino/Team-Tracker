@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tag, Button, Table, Input, message, InputNumber, Modal, Popconfirm, Form } from 'antd';
+import { Tag, InputNumber } from 'antd';
 
 const Stats = () => {
     return (
